@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>우신제 행운권 추첨</title>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>행운권 추첨</title>
 <script>
-(function(){var h=location.hash,list=['lucky-v3.html','lucky2026.html','woosinje.html'];
+(function(){var h=location.hash,list=['lucky-v4.html','lucky-v3.html','lucky2026.html','woosinje.html'];
 function tryAt(i){if(i>=list.length-1){location.replace(list[list.length-1]+h);return;}
 fetch(list[i],{method:'HEAD',cache:'no-store'}).then(function(r){if(r.ok)location.replace(list[i]+h);else tryAt(i+1);}).catch(function(){tryAt(i+1);});}
 tryAt(0);})();
